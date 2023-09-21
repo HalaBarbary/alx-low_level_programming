@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * main function with puts
+ * main - C program entry point
+ * Description: C program entry point
+ * Return: 0 if the program runs correctly
  */
 int main(void)
 {
