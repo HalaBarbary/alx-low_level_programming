@@ -10,7 +10,13 @@ int print_last_digit(int g)
 {
 	int x;
 
-	x = g % 10;
+	if (g < 0)
+	{
+		x = 0 - (g % 10)
+	} else
+	{
+		x = g % 10;
+	}
 	_putchar(x + '0');
 	return (x);
 }
