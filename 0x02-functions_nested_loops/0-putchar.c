@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 /**
  * main - C program entry point
  * Description: C program entry point
@@ -6,7 +7,7 @@
 */
 int main(void)
 {
-	printf("_putchar\n");
+	pprint();
 	return (0);
 }
 
