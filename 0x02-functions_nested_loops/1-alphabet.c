@@ -1,12 +1,12 @@
-#include <stdio.h>
 #include "main.h"
-/**
- * main - C program entry point
- * Description: C program entry point
- * Return: 0 if the program runs correctly
-*/
-int main(void)
+
+/*print_alphabet -  prints the alphabet, in lowercase, followed by a new line*/
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char alphabet;
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	{
+		putchar(alphabet);
+	}
+	putchar('\n');
 }

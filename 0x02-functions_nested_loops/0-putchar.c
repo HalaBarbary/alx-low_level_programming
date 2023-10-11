@@ -7,6 +7,12 @@
 */
 int main(void)
 {
-	pprint();
+	char print[] = "_putchar";
+	int i;
+	for ( i = 0; i <=7; i++)
+	{
+		_putchar(print[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
