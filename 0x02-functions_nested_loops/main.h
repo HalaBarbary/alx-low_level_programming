@@ -32,3 +32,9 @@ int print_sign(int n);
  * _abs - return the absolute value of an integer
  */
 int _abs(int);
+
+/**
+ * print_last_digit - prints the last digit
+ */
+int print_last_digit(int);
+
