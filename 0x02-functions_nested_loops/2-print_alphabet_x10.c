@@ -1,12 +1,17 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - C program entry point
- * Description: C program entry point
- * Return: 0 if the program runs correctly
-*/
-int main(void)
+ * print_alphabet_x10 - print alphabet 10 times
+ * Description: print alphabet 10 times each followed by anew line
+ * Return: no return
+ */
+
+void print_alphabet_x10(void)
 {
-	print_alphabet_x10();
-	return (0);
+	int i = 0;
+
+	while (i <= 9)
+	{
+		print_alphabet();
+		i++;
+	}
 }
