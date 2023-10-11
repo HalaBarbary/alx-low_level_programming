@@ -10,7 +10,7 @@ int _abs(int x)
 
 	int ret_val;
 
-	if (x > 0)
+	if (x >= 0)
 	{
 		ret_val = x;
 	} else if (x < 0)
