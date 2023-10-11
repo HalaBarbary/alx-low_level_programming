@@ -7,8 +7,15 @@
  */
 int _abs(int x)
 {
-	int z = 0;
-	int ret_val = z - x;
 
+	int ret_val;
+
+	if (x > 0)
+	{
+		ret_val = x;
+	} else if (x < 0)
+	{
+		ret_val = 0 - x;
+	}
 	return (ret_val);
 }
