@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 /**
  * main - C program entry point
  * Description: C program entry point
@@ -10,4 +10,3 @@ int main(void)
 	pprint();
 	return (0);
 }
-
