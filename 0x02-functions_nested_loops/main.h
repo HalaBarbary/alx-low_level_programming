@@ -1,14 +1,3 @@
-/**
- * pprint - prints _putchar
- * Return: 0 on success
- */
-int pprint (void);
-
-int pprint (void)
-{
-	printf("_putchar\n");
-	return (0);
-}
 
 /**
  * _putchar - writes the character c to stdout
@@ -20,9 +9,26 @@ int pprint (void)
 #include <unistd.h>
 int _putchar(char c)
 {
-	return (write(1, &c, 1));
+        return (write(1, &c, 1));
 }
 
+/**
+ * pprint - prints _putchar
+ * Return: 0 on success
+ */
+int pprint (void);
+
+int pprint (void)
+{
+	char print[] = "_putchar";
+	int i;
+	for ( i = 0; i <=7; i++)
+	{
+		_putchar(print[i]);
+	}
+	_putchar('\n');
+	return (0);
+}
 
 /**
  * print_alphabet - prints the alphabet in lowercase followed by a newline
