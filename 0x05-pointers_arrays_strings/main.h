@@ -9,3 +9,6 @@ void swap_int(int *a, int *b);
 
 /*return string lenght*/
 int _strlen(char *s);
+
+/*print a string*/
+void _puts(char *str);
