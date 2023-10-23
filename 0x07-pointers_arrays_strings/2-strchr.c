@@ -8,14 +8,19 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
+	unsigned long int i;
+	char *h;
 
 	for (i = 0; i < sizeof(s); i++)
 	{
 		if (s[i] == c)
 		{
-			return (*s[i]);
-		} else
-			return (NULL);
+			h = &s[i];
+		}
+		else
+		{
+			h = '\0';
+		}
 	}
+	return (h);
 }
