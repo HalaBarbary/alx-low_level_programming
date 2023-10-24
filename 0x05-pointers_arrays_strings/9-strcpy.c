@@ -7,7 +7,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	unsigned long int i;
 
 	for (i = 0; i <= sizeof(src); i++)
 	{
