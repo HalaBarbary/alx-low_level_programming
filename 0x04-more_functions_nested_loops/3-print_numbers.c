@@ -5,12 +5,12 @@
  */
 void print_numbers(void)
 {
-	int i, x;
+	int i;
 
-	x = 48;
-	for (i = 0; x < = 57; i++)
+	for (i = 0; i < = 9; i++)
 	{
-		_putchar(x);
+		_putchar(i + 0);
 		x++;
 	}
+	_putchar('\n');
 }
