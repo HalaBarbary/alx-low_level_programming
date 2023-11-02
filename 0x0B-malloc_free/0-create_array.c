@@ -8,12 +8,12 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *a = malloc(size);
-
-	a[0] = c;
-	if (size == 0)
+	if (size > 0)
 	{
-		return (NULL);
-	}
+		char *a = malloc(size);
+
+		a[0] = c;
 		return (a);
+	}
+		return ('\0');
 }
