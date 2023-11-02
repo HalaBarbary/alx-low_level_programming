@@ -17,7 +17,8 @@ char *create_array(unsigned int size, char c)
 		{
 			a[i] = c;
 		}
-	} else if (a == NULL || size == 0)
+	}
+	if (a == NULL || size == 0)
 	{
 		return (NULL);
 	}
