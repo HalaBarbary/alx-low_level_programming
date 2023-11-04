@@ -21,9 +21,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[i] = s1[i];
 	}
-	for (x = 0; s2[x] != '\0' && x < n; x++)
+	for (x = 0; s2[x] != '\0' && x < n; x++, i++)
 	{
-		p[x + i] = s2[x];
+		p[i] = s2[x];
 	}
 	return (p);
 }
