@@ -19,6 +19,14 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
+	if (*s1 == '\0')
+	{
+		str_c = s2;
+	} else if (*s2 == '\0')
+	{
+		str_c = s1;
+	} else
+	{
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		str_c[i] = s1[i];
@@ -31,6 +39,6 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	str_c[i] = '\0';
-
+	}
 	return (str_c);
 }
