@@ -19,10 +19,10 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	if (*s1 == '\0')
+	if (s1 == NULL)
 	{
 		str_c = s2;
-	} else if (*s2 == '\0')
+	} else if (s2 == NULL)
 	{
 		str_c = s1;
 	} else
