@@ -7,7 +7,6 @@
  * @s2: a pointer to the second string
  * Return: a pointer to the new concatented string
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	char *str_c;
@@ -16,21 +15,16 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		str_c = malloc(sizeof(*s2) + 1);
 		s1 = "";
 	} else if (s2 == NULL)
 	{
-		str_c = malloc(sizeof(*s1) + 1);
 		s2 = "";
 	} else if (s1 == NULL && s2 == NULL)
 	{
 		s1 = "";
 		s2 = "";
-	} else
-	{
-		str_c = malloc(sizeof(*s1) + sizeof(*s2) + 1);
 	}
-
+	str_c = malloc(sizeof(*s1) + sizeof(*s2) + 1);
 	if (str_c == NULL)
 	{
 		return (NULL);
@@ -39,13 +33,18 @@ char *str_concat(char *s1, char *s2)
 	{
 		str_c[i] = s1[i];
 	}
-
 	for (x = 0; s2[x] != '\0'; x++)
 	{
+		if (s1 == NULL)
+		{
+			str_c[x] = s2[x];
+			i = x;
+		} else
+		{
 		str_c[i] = s2[x];
 		i++;
+		}
 	}
-
 	str_c[i] = '\0';
 	return (str_c);
 }
